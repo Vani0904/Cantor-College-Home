@@ -61,7 +61,6 @@ a.active,a:hover{
 #check{
     display: none;
 }
-
 @media (max-width: 952px){
     img {
         font-size: 30px;
