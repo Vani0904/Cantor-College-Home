@@ -23,14 +23,6 @@ h1 {
 nav{
     height: 80px;
     width: 100%;
-    
-}
-main{
-   
-}
-nav ul{
-  float: right;
-  margin-right: 20px;
 }
 nav ul li{
   display: inline-block;
@@ -43,7 +35,6 @@ nav ul li a{
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
-
 }
 a.active,a:hover{
     color: #960F01;
@@ -82,7 +73,6 @@ a.active,a:hover{
         background: rgb(68, 9, 2);
         top: 80px;
         left: -109%;
-        float: center;
         transition: all 0.5s;
         margin-left: 1px;
     }
