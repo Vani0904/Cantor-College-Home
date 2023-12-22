@@ -12,6 +12,9 @@
     width: 100%;
     font-weight: 500;
 }
+a:link{
+    color: hsla(0,0%,100%,.7);
+}
 .background-img {    
     background-image: linear-gradient(rgba(22, 21, 21, 0.8),rgba(22, 21, 21, 0.8)),url("../website-images-assets/Cantor-building.jpg");
     background-size: cover;
@@ -92,8 +95,20 @@ nav ul li:hover::after{
         left: 0;
     }
 }
-main{
-    margin: 1em;
+.hero{
+    margin: 0 0 0.5em 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.first-section-hero {
+
+}
+.hero-img{
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width:100%;
 }
 .footer {
     background-color: #161515;
@@ -101,10 +116,55 @@ main{
     width: 100%;
     bottom: 0;
     position: fixed;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.footer-img{
+.footer-container{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    
+}
+.footer-left{
+    display: flex;
+    align-items: center;
+    margin-right: 11px;
+}
+.footer-logo{
     max-width: 110px;
 }
+.footer-right{
+    display: flex;
+    flex-direction: column;
+}
+.footer-details{
+    padding-top: 0.5em;
+}
 .icons {
+     margin-top: auto;
+     display: flex;
+     border-top: 1px solid #fff;
+}
+.icons a{
+    margin-right: 10px;
     color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-left,
+    .footer-right{
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
 }
