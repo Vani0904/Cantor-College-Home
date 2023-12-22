@@ -39,7 +39,7 @@ nav ul li::after{
     display: block;
     position: absolute; 
     left: 50%;
-    transform: translateX(-50%);        /* centers the line under the text*/
+    transform: translateX(-50%);        /* centres the line under the text*/
     transition: width .5s ease;
 }
 nav ul li:hover::after{
@@ -91,6 +91,9 @@ nav ul li:hover::after{
     #check:checked ~ ul{
         left: 0;
     }
+}
+main{
+    margin: 1em;
 }
 .footer {
     background-color: #161515;
