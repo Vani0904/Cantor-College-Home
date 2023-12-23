@@ -124,7 +124,7 @@ nav ul li:hover::after{
 .footer-container{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #707070;
     
 }
 .footer-left{
@@ -144,14 +144,14 @@ nav ul li:hover::after{
 }
 .icons {
      margin-top: auto;
-     display: flex;
-     border-top: 1px solid #fff;
+     border-top: 1px solid #707070;
 }
 .icons a{
     margin-right: 10px;
     color: #fff;
     text-decoration: none;
     font-size: 40px;
+    text-align: center;
 }
 
 
