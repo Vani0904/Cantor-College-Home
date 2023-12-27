@@ -21,8 +21,17 @@ body{
     flex-direction: column;
     margin: 0;
 }
-.main-content{
-    
+.main-content {
+    margin-bottom: 100px;
+}
+.design-layout{
+    max-width: 1200px;
+}
+
+.hero-img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 a:link{
     color: hsla(0,0%,100%,.7);
@@ -107,13 +116,22 @@ nav ul li:hover::after{
         left: 0;
     }
 }
-.hero{
+.hero-section{
     margin: 0 0 0.5em 0;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 15px;
+    text-align: center;
 }
-.first-section-hero {
-
+.hero-section p {
+    padding-bottom: 12px;
+}
+.hero-section li {
+    padding-bottom: 10px;
+    text-align: center;
+}
+.hero-section h2{
+    padding: 10px 0 10px 0;
 }
 .hero-img{
     object-fit: cover;
@@ -155,22 +173,35 @@ nav ul li:hover::after{
 .footer-details{
     padding-top: 0.5em;
 }
-.sitemap{
-    text-align: center;
-    position: relative;
+.sitemap-section{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
 }
-.sitemap h4{
+.sitemap-section h4{
     font-size: 16px;
     margin-bottom: 8px;
 }
-.sitemap ul{
-    list-style: none;
+.sitemap-section ul{
     padding: 0;
+    max-width: 48%;
 }
-.sitemap li{
+.sitemap-left li{
     margin-bottom: 8px;
 }
-.sitemap a {
+.sitemap-left a {
+    color: hsla(0,0%,100%,.7);
+    text-decoration: none;
+    font-size: 13px;
+}
+.sitemap-right{
+    max-width: 50%;
+}
+.sitemap-right li{
+    margin-bottom: 8px;
+}
+
+.sitemap-right a {
     color: hsla(0,0%,100%,.7);
     text-decoration: none;
     font-size: 13px;
