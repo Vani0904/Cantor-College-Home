@@ -1,11 +1,25 @@
 
-@media (min-width: 953px){
+@media only screen and (min-width: 769px){
   .logo{
         display: inline-block;
         padding-left: 8px;
         width: 150px;
         height: auto;
 }
+.footer-logo{
+  max-width: 150px;
+}
 }
 
+@media only screen and (min-width: 1200px){
+  .logo{
+    display: inline-block;
+    padding-left: 8px;
+    width: 170px;
+    height: auto;
+}
+.footer-logo{
+max-width: 170px;
+}
+}
 
