@@ -9,8 +9,43 @@
 .footer-logo{
   max-width: 150px;
 }
+.hero-img-text h2 {
+  font-size: 3em;
+}
+.nav-links{
+  text-align: right;
+  padding-top: 1.525em;
+  height: 60px;
+  width: 100%; 
 }
 
+.footer{
+  justify-content: center;
+}
+.about-us-section img{
+  max-width: 500px;
+}
+.computing-courses-col img{
+  max-width: 500px;
+}
+.design-courses-col img{
+  max-width: 500px;
+}
+}
+@media only screen and (max-width: 1013px){
+  .design-layout{
+    flex-direction: column;
+  }
+  .about-us-section img{
+    align-items: center;
+  }
+  .computing-courses-col img {
+    align-items: center;
+  }
+  .design-courses-col img {
+    align-items: center;
+  }
+}
 @media only screen and (min-width: 1200px){
   .logo{
     display: inline-block;
@@ -20,6 +55,9 @@
 }
 .footer-logo{
 max-width: 170px;
+}
+.sub-background-img{
+  background-position: center;
 }
 }
 

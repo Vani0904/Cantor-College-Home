@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cantor College - Home</title>
+        <script src="js/website-js.js" defer></script>
         <link rel="stylesheet" href="css/mobile-style.css">
         <link rel="stylesheet" href="css/desktop-style.css">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"> <!-- https://boxicons.com/ -->
@@ -13,44 +14,46 @@
     </head>
     <body>
         <div class="background-img">
-        <section class ="header">
-         <div>
-            <img class="logo" src = "website-images-assets/Cantor College.png" alt ="Cantor College">
-         </div>
-            <nav>
-                <input type ="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class='bx bx-menu'></i>
-                </label>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="how-to-find-us.html">How to Find us</a></li>
-                    <li><a href="facilities.html">Facilities</a></li>
-                    <li><a href="computing-courses.html">Computing Courses</a></li>
-                    <li><a href="design-courses.html">Design Courses</a></li>
-                    <li><a href="learning-resources.html">Learning Resources</a></li>
-                </ul>     
-            </nav>
-        </section>
+            <section class ="sub-header">
+                <div>
+                    <a href="index.html"><img class="logo" src ="website-images-assets/Cantor College.png" alt ="Cantor College"></a>
+                </div>
+                <nav class="nav-links">
+                    <input type ="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class='bx bx-menu'></i>
+                    </label>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="how-to-find-us.html">How to Find us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="computing-courses.html">Computing Courses</a></li>
+                        <li><a href="design-courses.html">Design Courses</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li> 
+                    </ul>     
+                </nav>
+                <div class="sub-header-text">
+                    <h1>Information for Students</h1>
+                </div>
+            </section>
         </div>
         <main class= "main-content">
-            <div id ="content" class="design-layout">
-                <div class="hero-section">
-                    <h2>Information for Students</h2>
+            <div class="design-layout">
+                <div class="information-students-section">
                     <ul><strong>Academic Information</strong> 
                         <li>Faculties - Links to all the Faculty and Departmental Offices with information on</li>
                         <li>A to Z List of Departments - Departmental Homepages.</li>
                         <li>Library and Learning Resource Services - Information on LLRS services, access to the on-line catalogue, 
-                            links to external academic resources and guides to using IT to support your studies.</li>
+                            links to external academic resources<br> and guides to using IT to support your studies.</li>
                         <li>Our Academic Partners - Information on College links</li>
                         <li>Research - links to the Research Centres, guide to research opportunities and help on finding research funding.</li>
                     </ul>
                     <ul><strong>Administrative Support</strong>
-                        <li>Academic Registry - Information provided by the Academic Registry, including Academic Calendars, Academic Regulations, Module Catalogue, information on award ceremonies and tuition fees.</li>
-                        <li>Student Guide to Regulations - General and Academic Regulations, World Wide Web Code of Practice, Rules Governing the Use of LLRS facilities.
+                        <li>Academic Registry - Information provided by the Academic Registry, including Academic Calendars, <br> Academic Regulations, Module Catalogue, information on award ceremonies and tuition fees.</li>
+                        <li>Student Guide to Regulations - General and Academic Regulations, World Wide Web Code of Practice, Rules Governing the Use of LLRS facilities. <br>
                             Student Services</li>
-                        <li>Advisory and Counselling Centre - academic advice, help for international students, careers guidance, personal counselling, student loans and access funds and support for students with disabilities/learning difficulties.</li>
+                        <li>Advisory and Counselling Centre - academic advice, help for international students, careers guidance, <br> personal counselling, student loans and access funds and support for students with disabilities/learning difficulties.</li>
                         <li>Health Centre - guide to the services provided by the University Health Centre.</li>
                         <li>Multi-Faith Centre - information regarding the work of the Multi-Faith Centre.</li>
                         <li>Pre-School Centre - contact information regarding the University's child care facilities.</li>
@@ -113,6 +116,7 @@
                         <li><a href="information-for-students.html">Information for Students</a></li>
                         <li><a href="information-for-staff.html">Information for Staff</a></li>
                         <li><a href="working-with-businesses.html">Working with Businesses</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
                     </ul>
                 </div>
             <div class = "icons">

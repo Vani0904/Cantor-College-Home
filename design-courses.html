@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cantor College - Home</title>
+        <script src="js/website-js.js" defer></script>
         <link rel="stylesheet" href="css/mobile-style.css">
         <link rel="stylesheet" href="css/desktop-style.css">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"> <!-- https://boxicons.com/ -->
@@ -12,36 +13,49 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="background-img">
-        <section class ="header">
-         <div>
-            <img class="logo" src = "website-images-assets/Cantor College.png" alt ="Cantor College">
-         </div>
-            <nav>
-                <input type ="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class='bx bx-menu'></i>
-                </label>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="how-to-find-us.html">How to Find us</a></li>
-                    <li><a href="facilities.html">Facilities</a></li>
-                    <li><a href="computing-courses.html">Computing Courses</a></li>
-                    <li><a href="design-courses.html">Design Courses</a></li>
-                    <li><a href="learning-resources.html">Learning Resources</a></li>
-                </ul>     
-            </nav>
-        </section>
+        <div class="sub-background-img">
+            <section class ="sub-header">
+                <div>
+                    <a href="index.html"><img class="logo" src ="website-images-assets/Cantor College.png" alt ="Cantor College"></a>
+                </div>
+                <nav class="nav-links">
+                    <input type ="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class='bx bx-menu'></i>
+                    </label>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="how-to-find-us.html">How to Find us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="computing-courses.html">Computing Courses</a></li>
+                        <li><a href="design-courses.html">Design Courses</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li> 
+                    </ul>     
+                </nav>
+                <div class="sub-header-text">
+                    <h1>Design Courses</h1>
+                </div>
+            </section>
         </div>
         <main class= "main-content">
-
-            <div id ="content" class="design-layout">
-                <div class="hero">
-                    <div class="first-section-hero"> 
+            <div class="design-layout">
+                    <div class="design-courses-section">
+                        <div class="design-courses-col">
+                            <img src="website-images-assets/thumbnail_IMG_8939.jpg" alt="Balcony near Cantor' College's Cafe">
+                        </div>
+                        <div class="design-courses-col">
+                            <p>The College is an internationally connected creative community of diverse disciplines housed under one roof. 
+                            shape our students' futures, preparing them to shape the world through applied knowledge and creativity.
+                            The College's art and design courses don't just train you, they promote alternative ways of thinking, making and communicating; 
+                            they provide you with space, tools and inspiration to develop your creative practice and a clear career path. 
+                            You'll get expert teaching from active practitioners and researchers who will encourage you to adopt innovative and resourceful approaches that both perceive and create opportunities for better lives.
+                            You'll develop your creative practice whilst interacting with your peers in well-equipped studios, making and digital workshops. 
+                            At the same time, you'll learn professional skills by working on applied briefs facilitated through our links with commercial clients, 
+                            cultural institutions, businesses and organisations.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <h2>Course search</h2>
             </div>
         </main>
         <footer class = "footer">
@@ -81,6 +95,7 @@
                         <li><a href="information-for-students.html">Information for Students</a></li>
                         <li><a href="information-for-staff.html">Information for Staff</a></li>
                         <li><a href="working-with-businesses.html">Working with Businesses</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
                     </ul>
                 </div>
             <div class = "icons">

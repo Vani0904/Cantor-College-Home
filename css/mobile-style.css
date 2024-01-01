@@ -7,6 +7,31 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/*Header section*/
+.sub-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 500;
+    position: relative;
+    z-index: 101;
+    height: 50vh;
+}
+.sub-header-text{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.sub-header-text h1{
+    font-size: 38px;
+}
+.sub-header .nav-links ul li{
+    line-height: 50px;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -14,60 +39,84 @@
     font-weight: 500;
     position: relative;
     z-index: 101;
-}
-body{
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
 }
-.main-content {
-    margin-bottom: 100px;
+.header-text{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-.design-layout{
-    max-width: 1200px;
+.header-text h1{
+    font-size: 38px;
 }
-
-.hero-img{
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+.header-text p{
+    margin: 10px 0 40px;
+    font-size: 14px;
 }
-a:link{
-    color: hsla(0,0%,100%,.7);
-}
-.background-img {    
-    background-image: linear-gradient(rgba(22, 21, 21, 0.8),rgba(22, 21, 21, 0.8)),url("../website-images-assets/Cantor-building.jpg");
-    background-size: cover;
-}
-nav{
-    height: 80px;
-    width: 100%;  
-}
-nav ul li{
+.hero-btn{
     display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 10px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.8s ease;
 }
-nav ul li a{
+.hero-btn:hover{
+    border: 1px solid #BA0046;
+    background: #161515;
+    color: #7D1664;
+    
+}
+.nav-links ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+    position: relative;
+}
+.nav-links ul li a{
     color: white;
     font-size: 1rem;
     padding: 7px 13px;
     text-transform: uppercase;
 }
-nav ul li::after{
+
+.nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
     background: #BA0046;
     display: block;
+    margin: auto;
     position: absolute; 
+    top: 70%;
     left: 50%;
-    transform: translateX(-50%);        /* centres the line under the text*/
-    transition: width .5s ease;
+    transform: translate(-50%);  /* centres the line under the text*/
+    transition: 0.7s;
 }
-nav ul li:hover::after{
-    width: 35%;
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links i {
+    padding-right: 15px;
+}
+.background-img {    
+    background-image: linear-gradient(rgba(22, 21, 21, 0.8),rgba(22, 21, 21, 0.8)),url("../website-images-assets/Cantor-building.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.sub-background-img{
+    background-image: linear-gradient(rgba(22, 21, 21, 0.8),rgba(22, 21, 21, 0.8)),url("../website-images-assets/Cantor-building-6.jpeg");
+    background-size: cover;
+}
+a:link{
+    color: hsla(0,0%,100%,.7);
 }
 .checkbtn{               /*Dropdown navigation menu button*/
     font-size: 30px;
@@ -78,66 +127,250 @@ nav ul li:hover::after{
     cursor: pointer;
     display: none;
 }
-#check{
-    display: none;
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
-@media (max-width: 952px){
-    .logo {
-        display: inline-block;
-        padding-left: 8px;
-        width: 110px;
-        height: auto;
-    }
+.main-content {
+    margin-bottom: 100px;
+    padding: 10px 0.5em 10px 0.5em;
+    text-align: center;
 }
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    .header ul{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: rgb(44, 42, 44);
-        top: 84px;
-        left: -109%;
-        transition: all 0.5s;
-        text-align: center;
-        margin: 0 auto;
-    }
-     .header nav ul li{
-        display: block;
-        margin: 35px 0px;
-        line-height: 30px;
-    }
-    .header nav ul li a{
-        font-size: 20px;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-}
-.hero-section{
-    margin: 0 0 0.5em 0;
+.main-content p{
     font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.main-content h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.main-content p, 
+.main-content h2{
+    margin: 9px;
+}
+.main-content section{
+    margin-bottom: 20px;
+}
+.design-layout{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col-left h3,
+.course-col-right h3{
+    font-size: 25px;
+    text-shadow: 2px 2px rgba(24, 24, 29, 0.8);
+    color:#fff;
+
+}
+/*Home page section */
+.course{
+    width: 80%;
+    margin: auto;
     text-align: center;
+    padding-top: 60px;
+    background: #ebe9e9;
 }
-.hero-section p {
-    padding-bottom: 12px;
+.course-col-left{
+    background-image: linear-gradient(rgba(22, 21, 21, 0.3),rgba(22, 21, 21, 0.3)), url("../website-images-assets/Computing-Playstation-Lab-2.jpg");
+    background-size: cover;
+    background-position: 2px;
 }
-.hero-section li {
+.course-col-right{
+    background-image: linear-gradient(rgba(22, 21, 21, 0.2),rgba(22, 21, 21, 0.2)), url("../website-images-assets/IMG_0170.jpeg");
+    background-size: cover;
+    background-position: center
+}
+.course-col-left,
+.course-col-right{
+    flex-basis: 44%;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+    min-height: 250px;
+}
+.course-col-left:hover,
+.course-col-right:hover{
+    box-shadow: 0 0 20px 0 rgba(24, 24, 29, 0.6);
+    text-decoration: underline;
+}
+h3{
+    font-weight: 600;
+    margin: 12px 0;
+}
+.information{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+   padding-top: 60px;
+    background:#ebe9e9;
+
+}
+.information h2{
+    color: #000000;
+}
+.information-col{
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: #fff;
+    min-height: 250px;
+    background: #94023a;
+    transition: 0.5s;
+    border-radius: 8px;
+    margin: 10px 10px;
+}
+.information-col img{
+    max-width: 100%;
+    height: 280px;
+}
+.information-col:hover {
+    box-shadow: 0 0 20px 0 rgba(24, 24, 29, 0.6);
+}
+.information-col:hover h3{
+    text-decoration: underline;
+}
+/* About us section */
+.about-us-section{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+   padding-top: 60px;
+    background:#ebe9e9;
+
+}
+.about-us-col img{
+    max-width: 100%;
+    height: auto;
+    padding: 12px 10px;
+}
+/*Facilities section*/
+.facilities-section{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+   padding-top: 60px;
+    background:#ebe9e9;
+}
+.facilities-section li{
+    list-style: inside;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+/*information for students section*/
+.information-students-section{
+    width: 80%;
+    margin: auto;
+    background:#ebe9e9;
     padding-bottom: 10px;
+}
+.information-students-section li{
+    list-style: inside;
+    padding-top: 20px;
     text-align: center;
+
 }
-.hero-section h2{
-    padding: 10px 0 10px 0;
+/*information for staff section*/
+.information-staff-section{
+    display: flex;
+    margin: auto;
 }
-.hero-img{
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width:100%;
+.information-staff-section-text{
+    flex-basis: 15%;
+    margin: 10px;
+    background: #ebe9e9;
+    border-radius: 8px;
 }
+/*Computing courses section*/
+.computing-courses-section{
+    width: 90%;
+    margin: auto;
+    background: #ebe9e9;
+}
+.computing-courses-col img{
+    max-width: 100%;
+    height: auto;
+    padding: 12px 10px;
+}
+.computing-courses-col aside{
+    font-size: 15px;
+    padding: 12px 10px;
+}
+/*Design courses section*/
+.design-courses-section{
+    width: 90%;
+    margin: auto;
+    background: #ebe9e9;
+}
+.design-courses-col img{
+    max-width: 100%;
+    margin: auto;
+    padding: 12px 10px;
+}
+.design-courses-col aside{
+    font-size: 15px;
+    padding: 10px 12px;
+}
+/*Learning resources section*/
+.learning-resources-section{
+    background: #ebe9e9;
+    margin: auto;
+    width: 80%;
+    text-align: left;
+}
+.learning-resources-section li, 
+.learning-resources-section p, 
+.learning-resources-section i{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 12px;
+}
+.learning-resources-section li {
+    list-style: lower-roman inside;
+}
+.learning-resources-section h4{
+    font-weight: 500;
+    margin-top: 10px;
+}
+/*Contact us section*/
+.contact-us-section{
+    border-radius: 5px;
+    padding: 20px;
+    background: #ebe9e9;
+    margin: auto;
+}
+.contact-us-section label {
+    font-weight: 500;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bebebe;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #7D1664;
+    color: white;
+    padding: 11px 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: #6d1357;
+}
+/*Footer section*/
 .footer {
     background-color: #161515;
     color: #fff;
@@ -146,14 +379,13 @@ nav ul li:hover::after{
     left: 0;
     display:flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
 }
 .footer-container{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #707070;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .footer-left{
     display: flex;
@@ -173,7 +405,7 @@ nav ul li:hover::after{
 }
 .sitemap-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: left;
 }
 .sitemap-section h4{
@@ -198,7 +430,6 @@ nav ul li:hover::after{
 .sitemap-right li{
     margin-bottom: 8px;
 }
-
 .sitemap-right a {
     color: hsla(0,0%,100%,.7);
     text-decoration: none;
@@ -206,7 +437,7 @@ nav ul li:hover::after{
 }
 .icons {
      margin-top: auto;
-     border-top: 1px solid #707070;
+     
 }
 .icons a{
     margin-right: 10px;
@@ -215,15 +446,35 @@ nav ul li:hover::after{
     font-size: 35px;
     text-align: center;
 }
-
-
+/*Media queries*/
+@media only screen and (max-width: 480px){
+    .design-layout img{
+        display: none;
+    }
+    .about-us-section img{
+        display: none;
+    }
+    .computing-courses-section img {
+        display: none;
+    }
+    .design-courses-section img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 970px){
+    .information-staff-section{
+        flex-direction: column;
+    }
+}
 @media only screen and (max-width: 768px) {
     .footer{
         flex-direction: column;
         text-align: center;
         padding: 20px;
     }
-
+    .footer-container{
+        border-bottom: 1px solid #707070;
+    }
     .footer-left,
     .footer-right{
         margin-bottom: 15px;
@@ -231,5 +482,63 @@ nav ul li:hover::after{
     }
     .sitemap{
         text-align: center;
+    }
+    .icons{
+        border-top: 1px solid #707070;
+    }
+    .design-layout{
+        flex-direction: column;
+    }
+}
+@media (max-width: 952px){
+    .logo {
+        display: inline-block;
+        padding-left: 8px;
+        width: 110px;
+        height: auto;   
+    }
+}
+#check{
+    display: none;
+}
+@media (max-width: 858px){
+    
+    .checkbtn{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .sub-header ul,
+    .header ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgb(44, 42, 44);
+        top: 84px;
+        left: -109%;
+        transition: all 0.5s;
+        text-align: center;
+        margin: 0 auto;
+        z-index: 100;
+    }
+     .sub-header nav ul li,
+     .header nav ul li{
+        display: block;
+        margin: 35px 0px;
+        line-height: 30px;
+    }
+    .sub-header nav ul li a,
+    .header nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .nav-links ul li::after{
+        top: 100%;
+    }
+    .nav-links ul li:hover::after{
+        width: 35%;
     }
 }

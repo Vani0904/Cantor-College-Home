@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cantor College - Home</title>
+        <script src="js/website-js.js" defer></script>
         <link rel="stylesheet" href="css/mobile-style.css">
         <link rel="stylesheet" href="css/desktop-style.css">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"> <!-- https://boxicons.com/ -->
@@ -13,41 +14,74 @@
     </head>
     <body>
         <div class="background-img">
-        <section class ="header">
-         <div>
-            <img class="logo" src = "website-images-assets/Cantor College.png" alt ="Cantor College">
-         </div>
-            <nav>
-                <input type ="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class='bx bx-menu'></i>
-                </label>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="how-to-find-us.html">How to Find us</a></li>
-                    <li><a href="facilities.html">Facilities</a></li>
-                    <li><a href="computing-courses.html">Computing Courses</a></li>
-                    <li><a href="design-courses.html">Design Courses</a></li>
-                    <li><a href="learning-resources.html">Learning Resources</a></li>
-                </ul>     
-            </nav>
-        </section>
+            <section class ="header">
+                <div>
+                    <a href="index.html"><img class="logo" src ="website-images-assets/Cantor College.png" alt ="Cantor College"></a>
+                </div>
+                <nav class="nav-links">
+                    <input type ="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class='bx bx-menu'></i>
+                    </label>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="how-to-find-us.html">How to Find us</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="computing-courses.html">Computing Courses</a></li>
+                            <li><a href="design-courses.html">Design Courses</a></li>
+                            <li><a href="contact-us.html">Contact us</a></li> 
+                        </ul>   
+                </nav>
+                <div class ="header-text">
+                    <h1>Welcome to Cantor College</h1>
+                    <p> A hub of creativity, innovation, and academic excellence. 
+                    Explore the world of computing and design in an environment that promotes learning and collaboration</p>
+                    <a href="about-us.html" class="hero-btn">Learn more</a>
+                </div>
+            </section>
         </div>
         <main class="main-content">
-            
-            <div id ="content" class="design-layout">
-                <div class="hero">
-                    <div class="first-section-hero"> 
-                    </div>
+            <section class="course">
+                <h2>Our Courses</h2>
+                <p>Explore Cantor College's dynamic courses in Computing and Design</p>
+                <div class="design-layout">
+                    <a href="computing-courses.html" class="course-col-left"><div>
+                        <h3>Computing Courses</h3>
+                    </div></a>
+                    <a href="design-courses.html" class="course-col-right"><div>
+                        <h3>Design Courses</h3>
+                    </div></a>
+            </section>
+            <section class="information">    
+                <h2>For Applicants</h2>   
+                <div class="design-layout">
+                    <a href="facilities.html"><div class="information-col">
+                        <img src="website-images-assets/Cantor-atrium-3.jpg" alt="Interior of Cantor">
+                        <h3>Our Facilities</h3>
+                        <p>Discover state-of-the-art facilities at Cantor College</p>
+                    </div></a>
+                    <a href="information-for-students.html"><div class="information-col">
+                        <img src="website-images-assets/Cantor-Lecture-Theatre.JPG" alt="Cantor College's Lecture hall">
+                        <h3>Information for Students</h3>
+                        <p>Discover everything Cantor College has to offer</p>
+                    </div></a>
+                    <a href="how-to-find-us.html"><div class="information-col">
+                        <img src="website-images-assets/IMG_1005.jpeg" alt="Welcome to sheffield sign">
+                        <h3>Looking for us?</h3>
+                        <p>See where you can find Cantor College here</p>
+                    </div></a>
+                    
                 </div>
-                <h2>Course search</h2>
+            </section>
+            <div>
+                <h2></h2>
             </div>
         </main>
         <footer class = "footer">
             <div class = "footer-container">
                 <div class="footer-left">
-                        <img class ="footer-logo"src = "website-images-assets/Cantor College.png" alt ="Cantor College">
+                    <img class ="footer-logo"src = "website-images-assets/Cantor College.png" alt ="Cantor College">
                 </div>
                     <div class="footer-right">
                         <span>Cantor College, Main Street, </span>
@@ -81,6 +115,7 @@
                         <li><a href="information-for-students.html">Information for Students</a></li>
                         <li><a href="information-for-staff.html">Information for Staff</a></li>
                         <li><a href="working-with-businesses.html">Working with Businesses</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
                     </ul>
                 </div>
             <div class = "icons">
@@ -90,7 +125,6 @@
                 <a href="#"><i class='bx bxl-youtube'></i></href>
             </div>
             <div>
-                
             </div>
         </footer>
     </body>
