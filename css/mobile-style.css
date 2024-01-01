@@ -86,7 +86,19 @@
     padding: 7px 13px;
     text-transform: uppercase;
 }
-
+.theme-toggle-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    position:absolute;
+}
+.dark-mode{
+    background-color: #161515;
+    color:#fff;
+}
 .nav-links ul li::after{
     content: '';
     width: 0%;
@@ -399,13 +411,14 @@ input[type=submit]:hover{
     font-size: 13px;
     flex-direction: column;
     text-align: center;
+    margin-right: 10px;
 }
 .footer-details{
     padding-top: 0.5em;
 }
 .sitemap-section{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: left;
 }
 .sitemap-section h4{
@@ -506,7 +519,7 @@ input[type=submit]:hover{
     .checkbtn{
         display: block;
         color: #fff;
-        margin: 10px;
+        margin: 15px;
         cursor: pointer;
     }
     .sub-header ul,
