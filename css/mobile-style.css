@@ -86,19 +86,6 @@
     padding: 7px 13px;
     text-transform: uppercase;
 }
-.theme-toggle-btn {
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    top: 0;
-    right: 0;
-    position:absolute;
-}
-.dark-mode{
-    background-color: #161515;
-    color:#fff;
-}
 .nav-links ul li::after{
     content: '';
     width: 0%;
@@ -224,9 +211,6 @@ h3{
     background:#ebe9e9;
 
 }
-.information h2{
-    color: #000000;
-}
 .information-col{
     flex-basis: 31%;
     margin-bottom: 5%;
@@ -257,7 +241,6 @@ h3{
     text-align: left;
    padding-top: 60px;
     background:#ebe9e9;
-
 }
 .about-us-col img{
     max-width: 100%;
@@ -418,7 +401,7 @@ input[type=submit]:hover{
 }
 .sitemap-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: left;
 }
 .sitemap-section h4{
@@ -554,4 +537,31 @@ input[type=submit]:hover{
     .nav-links ul li:hover::after{
         width: 35%;
     }
+}
+/*Dark theme toggle*/
+.theme-toggle-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    position:absolute;
+    color: #fff;
+}
+.dark-mode{
+    background: #1d1c1c;
+    color:#fff;
+}
+body.dark-mode .course,
+body.dark-mode .about-us-section,
+body.dark-mode .information-students-section,
+body.dark-mode .information,
+body.dark-mode .facilities-section,
+body.dark-mode .computing-courses-section,
+body.dark-mode .design-courses-section,
+body.dark-mode .learning-resources-section,
+body.dark-mode .contact-us-section
+ {
+    background: #383838;
 }

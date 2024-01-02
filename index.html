@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cantor College - Home</title>
-        <script src="js/website-js.js" defer></script>
+        <script src="js/website.js" defer></script>
         <link rel="stylesheet" href="css/mobile-style.css">
         <link rel="stylesheet" href="css/desktop-style.css">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"> <!-- https://boxicons.com/ -->
@@ -18,17 +18,15 @@
                 <div>
                     <a href="index.html"><img class="logo" src ="website-images-assets/Cantor College.png" alt ="Cantor College"></a>
                 </div>
-                <div class="theme-toggle">
-                    <button class="theme-toggle-btn" type="button" aria-label="Toggle Dark Mode">
-                        <i class='bx bxs-sun' style='color:#ffffff' ></i>
+                    <button class="theme-toggle-btn"  type="button" aria-label="Toggle Dark Mode">
+                        <i class='bx bxs-sun' id="dark-theme-toggle"></i>
                     </button>
-                </div>
                 <nav class="nav-links">
                     <input type ="checkbox" id="check">
                     <label for="check" class="checkbtn">
                         <i class='bx bx-menu'></i>
                     </label>
-                        <ul>
+                        <ul class="nav-links">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about-us.html">About Us</a></li>
                             <li><a href="how-to-find-us.html">How to Find us</a></li>
@@ -136,5 +134,6 @@
             <div>
             </div>
         </footer>
+        <script src="js/darkmode.js" defer></script>
     </body>
 </html>
