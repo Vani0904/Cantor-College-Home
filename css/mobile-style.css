@@ -131,6 +131,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    transition: 0.2s;
 }
 .main-content {
     margin-bottom: 100px;
@@ -254,6 +255,11 @@ h3{
     text-align: center;
    padding-top: 60px;
     background:#ebe9e9;
+}
+.facilities-section img{
+    max-width: 100%;
+    height: auto;
+    padding: 12px 10px;
 }
 .facilities-section li{
     list-style: inside;
@@ -573,6 +579,7 @@ input[type=submit]:hover{
 .dark-mode{
     background: #1d1c1c;
     color:#fff;
+    transition: 0.2s;
 }
 body.dark-mode .course,
 body.dark-mode .about-us-section,
