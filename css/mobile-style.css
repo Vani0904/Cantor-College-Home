@@ -76,7 +76,7 @@
 }
 .nav-links ul li{
     display: inline-block;
-    line-height: 100px;
+    line-height: 60px;
     margin: 0 5px;
     position: relative;
 }
@@ -170,7 +170,7 @@ body{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 60px;
+    padding: 60px 15px 10px 15px;
     background: #ebe9e9;
 }
 .course-col-left{
@@ -265,7 +265,7 @@ h3{
     width: 80%;
     margin: auto;
     background:#ebe9e9;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 .information-students-section li{
     list-style: inside;
@@ -364,6 +364,20 @@ input[type=submit] {
 }
 input[type=submit]:hover{
     background-color: #6d1357;
+}
+/*how to find us sectiom*/
+.how-to-find-us-section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #ebe9e9;
+}
+.how-to-find-us-section img {
+    width:50%;
+    margin: auto;
+    padding: 10px 12px;
 }
 /*Footer section*/
 .footer {
@@ -538,6 +552,13 @@ input[type=submit]:hover{
         width: 35%;
     }
 }
+.copyright-section{
+    width: 100%;
+    background: #161515;
+    text-align: center;
+    color: #fff;
+    border-top: solid 1px #bebebe;
+}
 /*Dark theme toggle*/
 .theme-toggle-btn {
     background: transparent;
@@ -561,7 +582,8 @@ body.dark-mode .facilities-section,
 body.dark-mode .computing-courses-section,
 body.dark-mode .design-courses-section,
 body.dark-mode .learning-resources-section,
-body.dark-mode .contact-us-section
+body.dark-mode .contact-us-section,
+body.dark-mode .how-to-find-us-section
  {
     background: #383838;
 }
